@@ -1,5 +1,5 @@
 import { API_URL, STATUS_INDEX } from './constants.js';
-import { Device, PrinterStatus } from './types.js';
+import type { Device, PrinterStatus } from './types.js';
 
 class ZebraBrowserPrintWrapper {
   device: Device = {} as Device;
@@ -270,4 +270,5 @@ class ZebraBrowserPrintWrapper {
   };
 }
 
+export type { Device, PrinterStatus } from './types.js';
 export default ZebraBrowserPrintWrapper;
