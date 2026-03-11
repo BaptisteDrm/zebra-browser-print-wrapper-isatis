@@ -1,5 +1,5 @@
 {
-  "name": "@isatis/zebra-browser-print-wrapper",
+  "name": "@hacksis/zebra-browser-print-wrapper",
   "version": "1.0.0",
   "description": "Zebra Browser Print Javascript Wrapper",
   "author": "BaptisteDrm",
@@ -17,9 +17,7 @@
   "scripts": {
     "build": "tsc",
     "prepublishOnly": "yarn build",
-    "format": "prettier --write \"src/**/*.ts\"",
-    "lint": "tslint -p tsconfig.json",
-    "test": "jest --config jestconfig.json"
+    "lint": "tslint -p tsconfig.json"
   },
   "keywords": [
     "zpl",
@@ -33,14 +31,14 @@
     "README.md"
   ],
   "devDependencies": {
-    "@types/jest": "^26.0.23",
     "@types/node": "^24.11.0",
-    "jest": "^27.0.4",
-    "prettier": "^2.3.1",
-    "ts-jest": "^27.0.3",
     "tslint": "^6.1.3",
-    "tslint-config-prettier": "^1.18.0",
     "typescript": "^5.9.3"
   },
-  "packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e"
+  "peerDependenciesMeta": {
+    "typescript": {
+      "optional": true
+    }
+  },
+  "packageManager": "yarn@4.13.0"
 }
