@@ -1,11 +1,12 @@
 {
-  "name": "zebra-browser-print-wrapper-isatis",
+  "name": "@isatis/zebra-browser-print-wrapper",
   "version": "1.0.0",
   "description": "Zebra Browser Print Javascript Wrapper",
-  "main": "src/index.js",
-  "types": "src/index.d.ts",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "scripts": {
     "build": "tsc",
+    "prepublishOnly": "yarn build",
     "format": "prettier --write \"src/**/*.ts\"",
     "lint": "tslint -p tsconfig.json",
     "test": "jest --config jestconfig.json"
@@ -22,8 +23,11 @@
     "barcode"
   ],
   "files": [
-    "src/**/*"
+    "lib/**/*",
+    "README.md",
+    "LICENSE"
   ],
+  "private": false,
   "author": "BaptisteDrm",
   "license": "GPL-3.0",
   "bugs": {
