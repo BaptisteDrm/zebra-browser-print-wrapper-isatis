@@ -16,7 +16,7 @@ class ZebraBrowserPrintWrapper {
     const endpoint = API_URL + 'available';
 
     try {
-      const res = await fetch(endpoint, config);
+      const res = await this.fetchWithTimeout(endpoint, config);
 
       if (!res.ok) {
         throw new Error(`HTTP ${res.status} on ${endpoint}`);
@@ -45,7 +45,7 @@ class ZebraBrowserPrintWrapper {
     const endpoint = API_URL + 'default';
 
     try {
-      const res = await fetch(endpoint, config);
+      const res = await this.fetchWithTimeout(endpoint, config);
 
       if (!res.ok) {
         throw new Error(`Printer API request failed: ${res.status} ${res.statusText}`);
@@ -226,7 +226,7 @@ class ZebraBrowserPrintWrapper {
         body: JSON.stringify(myData),
       };
 
-      const res = await fetch(endpoint, config);
+      const res = await this.fetchWithTimeout(endpoint, config);
 
       if (!res.ok) {
         throw new Error(`Printer API request failed: ${res.status} ${res.statusText}`);
