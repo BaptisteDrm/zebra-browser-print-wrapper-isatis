@@ -1,0 +1,14 @@
+﻿resources:
+  repositories:
+    - repository: Templates
+      type: git
+      name: Hacksis.AzureDevOps/Templates
+
+trigger:
+  batch: true
+  branches:
+    include:
+      - master
+
+jobs:
+  - template: Jobs/build-package-yarn.yml@Templates

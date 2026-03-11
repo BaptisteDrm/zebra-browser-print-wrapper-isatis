@@ -1,5 +1,5 @@
-import { API_URL, STATUS_INDEX } from './constants';
-import { Device, PrinterStatus } from './types';
+import { API_URL, STATUS_INDEX } from './constants.js';
+import { Device, PrinterStatus } from './types.js';
 
 class ZebraBrowserPrintWrapper {
   device: Device = {} as Device;

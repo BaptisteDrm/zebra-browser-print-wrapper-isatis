@@ -1,11 +1,17 @@
 {
-    "compilerOptions": {
-      "target": "es2017",
-      "module": "commonjs",
-      "declaration": true,
-      "outDir": "dist",
-      "strict": true
-    },
-    "include": ["src"],
-    "exclude": ["node_modules", "**/__tests__/*"]
+  "compilerOptions": {
+    "rootDir": "./src",
+    "outDir": "dist",
+    "target": "ESNext",
+    "module": "Node16",
+    "moduleResolution": "node16",
+    "declaration": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "noImplicitAny": true,
+    "skipLibCheck": true
+  },
+  "include": ["src"],
+  "exclude": ["node_modules", "dist", "**/__tests__/*"]
 }
