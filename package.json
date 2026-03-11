@@ -2,18 +2,14 @@
   "name": "@isatis/zebra-browser-print-wrapper",
   "version": "1.0.0",
   "description": "Zebra Browser Print Javascript Wrapper",
-  "main": "lib/index.js",
-  "types": "lib/index.d.ts",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
     "build": "tsc",
     "prepublishOnly": "yarn build",
     "format": "prettier --write \"src/**/*.ts\"",
     "lint": "tslint -p tsconfig.json",
     "test": "jest --config jestconfig.json"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/BaptisteDrm/zebra-browser-print-wrapper-isatis.git"
   },
   "keywords": [
     "zpl",
@@ -23,17 +19,11 @@
     "barcode"
   ],
   "files": [
-    "lib/**/*",
-    "README.md",
-    "LICENSE"
+    "dist/**/*",
+    "README.md"
   ],
-  "private": false,
   "author": "BaptisteDrm",
-  "license": "GPL-3.0",
-  "bugs": {
-    "url": "https://github.com/BaptisteDrm/zebra-browser-print-wrapper-isatis/issues"
-  },
-  "homepage": "https://github.com/BaptisteDrm/zebra-browser-print-wrapper-isatis#readme",
+  "license": "UNLICENSED",
   "devDependencies": {
     "@types/jest": "^26.0.23",
     "jest": "^27.0.4",
