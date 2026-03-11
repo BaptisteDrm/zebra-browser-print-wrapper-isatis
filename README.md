@@ -54,13 +54,13 @@ JavaScript / TypeScript projects
 Install the module in your project via YARN
 
 ```bash
-yarn add zebra-browser-print-wrapper
+yarn add @hacksis/zebra-browser-print-wrapper
 ```
 
 Or NPM
 
 ```bash
-npm i zebra-browser-print-wrapper
+npm i @hacksis/zebra-browser-print-wrapper
 ```
 ---
 
@@ -152,7 +152,7 @@ Promise<void>
 ### Basic example
 
 ```js
-const ZebraBrowserPrintWrapper = require('zebra-browser-print-wrapper-isatis');
+const ZebraBrowserPrintWrapper = require('@hacksis/zebra-browser-print-wrapper');
 
 const printBarcode = async (serial) => {
   try {
@@ -186,7 +186,7 @@ printBarcode('0123456789');
 ### Typescript example
 
 ```js
-import ZebraBrowserPrintWrapper from 'zebra-browser-print-wrapper-isatis';
+import ZebraBrowserPrintWrapper from '@hacksis/zebra-browser-print-wrapper';
 
 async function printLabel(serial: string): Promise<void> {
   try {
