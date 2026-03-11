@@ -29,6 +29,7 @@ It can be used in frontend applications such as:
 - Raw text / ZPL printing
 - JavaScript and TypeScript friendly
 ---
+
 ## Prerequisites
 Before using this package, make sure that:
 
@@ -51,7 +52,8 @@ JavaScript / TypeScript projects
 
 ## Install
 
-Install the module in your project via YARN
+Install the module in your project 
+Via YARN
 
 ```bash
 yarn add @hacksis/zebra-browser-print-wrapper
@@ -282,4 +284,3 @@ If requests fail unexpectedly:
 - Prefer checking printer status before printing
 - Validate your ZPL when testing new labels
 - Handle errors gracefully in the UI if used in a frontend application
-

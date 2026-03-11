@@ -12,3 +12,5 @@ trigger:
 
 jobs:
   - template: Jobs/build-package-yarn.yml@Templates
+    parameters:
+      test: false
