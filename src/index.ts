@@ -1,5 +1,4 @@
 import { API_URL, STATUS_INDEX } from './constants';
-
 import { Device, PrinterStatus } from './types';
 
 class ZebraBrowserPrintWrapper {
